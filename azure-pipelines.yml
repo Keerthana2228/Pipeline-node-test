@@ -2,7 +2,7 @@ trigger:
   - main  # Or master depending on your branch
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'self-hosted-agent-pool'
 
 steps:
   - task: NodeTool@0
