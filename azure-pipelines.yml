@@ -1,13 +1,13 @@
 trigger:
-  - main  # Or master depending on your branch
+  - main  
 
 pool:
-  vmImage: 'self-hosted-agent-pool'
+  name: 'self-hosted-agent-pool'
 
 steps:
   - task: NodeTool@0
     inputs:
-      versionSpec: '16.x'  # You can use 18.x or LTS too
+      versionSpec: '18.x'  # You can use 18.x or LTS too
     displayName: 'Install Node.js'
 
   - script: |
